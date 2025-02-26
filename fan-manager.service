@@ -1,0 +1,12 @@
+[Unit]
+Description=Service to manage the PWM fan.
+After=network.target  # optional
+
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/fan-manager.sh
+Restart=on-failure   # optionally restart on failure
+
+[Install]
+WantedBy=multi-user.target
