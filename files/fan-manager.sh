@@ -63,13 +63,13 @@ monitor_temp() {
     while true; do
         temp=$(read_temp)
         echo "Current temperature: $temp °C"
-        if [ "$temp" -ge "$level4" ]; then
+        if [ "$temp" -ge "$level3" ]; then
             set100
-        elif [ "$temp" -ge "$level3" ]; then
-            set75
         elif [ "$temp" -ge "$level2" ]; then
-            set50
+            set75
         elif [ "$temp" -ge "$level1" ]; then
+            set50
+        elif [ "$temp" -ge "$level0" ]; then
             set25
         else
             set0
