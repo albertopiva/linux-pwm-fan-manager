@@ -74,7 +74,7 @@ monitor_temp() {
         else
             set0
         fi
-        sleep 5
+        sleep 60
     done
 }
 
