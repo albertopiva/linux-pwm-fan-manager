@@ -13,7 +13,7 @@ echo "Copying the files to the correct locations..."
 cp files/fan-manager.sh /home/$SUDO_USER/.fan-manager/fan-manager.sh
 sudo chmod +x /home/$SUDO_USER/.fan-manager/fan-manager.sh
 # Copy the configuration file
-cp files/fan-manager.conf /home/$SUDO_USER/.fan-manager/fan-manager.conf
+cp files/fan-manager.conf /home/$SUDO_USER/.fan-manager/fan.cfg
 
 # Create the service
 echo "Creating the service..."
