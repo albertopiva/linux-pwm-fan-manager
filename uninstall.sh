@@ -12,4 +12,4 @@ sudo rm /etc/systemd/system/fan-manager.service
 sudo systemctl daemon-reload
 
 echo "Remove the directory .fan-manager..."
-sudo rm -R /home/$USER/.fan-manager
+sudo rm -R /home/$SUDO_USER/.fan-manager

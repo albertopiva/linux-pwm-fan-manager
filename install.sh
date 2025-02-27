@@ -6,14 +6,14 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "Creating the directory .fan-manager..."
-mkdir /home/$USER/.fan-manager
+mkdir /home/$SUDO_USER/.fan-manager
 
 echo "Copying the files to the correct locations..."
 # Copy the script file
-cp files/fan-manager.sh /home/$USER/.fan-manager/fan-manager.sh
-sudo chmod +x /home/$USER/.fan-manager/fan-manager.sh
+cp files/fan-manager.sh /home/$SUDO_USER/.fan-manager/fan-manager.sh
+sudo chmod +x /home/$SUDO_USER/.fan-manager/fan-manager.sh
 # Copy the configuration file
-cp files/fan-manager.conf /home/$USER/.fan-manager/fan-manager.conf
+cp files/fan-manager.conf /home/$SUDO_USER/.fan-manager/fan-manager.conf
 
 # Create the service
 echo "Creating the service..."
