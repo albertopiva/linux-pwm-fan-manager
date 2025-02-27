@@ -4,7 +4,7 @@ After=network.target  # optional
 
 [Service]
 Type=simple
-ExecStart=/home/$USER/.fan-manager/fan-manager.sh
+ExecStart=/usr/local/bin/fan-manager.sh
 Restart=on-failure   # optionally restart on failure
 
 [Install]

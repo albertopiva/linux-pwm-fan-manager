@@ -1,5 +1,5 @@
 #!/bin/bash
-source config.cfg;
+source /etc/fan.conf;
 
 actual=0
 

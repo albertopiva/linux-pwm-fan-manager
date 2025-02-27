@@ -11,5 +11,8 @@ sudo systemctl stop fan-manager.service
 sudo rm /etc/systemd/system/fan-manager.service
 sudo systemctl daemon-reload
 
-echo "Remove the directory .fan-manager..."
-sudo rm -R /home/$SUDO_USER/.fan-manager
+echo "Remove the script file..."
+sudo rm /usr/local/bin/fan-manager.sh
+
+echo "Remove the configuration file..."
+sudo rm -R /etc/fan.conf

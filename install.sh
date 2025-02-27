@@ -10,10 +10,10 @@ mkdir /home/$SUDO_USER/.fan-manager
 
 echo "Copying the files to the correct locations..."
 # Copy the script file
-cp files/fan-manager.sh /home/$SUDO_USER/.fan-manager/fan-manager.sh
-sudo chmod +x /home/$SUDO_USER/.fan-manager/fan-manager.sh
+cp files/fan-manager.sh /usr/local/bin/fan-manager.sh
+sudo chmod +x /usr/local/bin/fan-manager.sh
 # Copy the configuration file
-cp files/fan.cfg /home/$SUDO_USER/.fan-manager/fan.cfg
+cp files/fan.conf /etc/fan.conf
 
 # Create the service
 echo "Creating the service..."
