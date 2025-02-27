@@ -2,7 +2,6 @@
 Description=Service to manage the PWM fan.
 After=network.target  # optional
 
-
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/fan-manager.sh
