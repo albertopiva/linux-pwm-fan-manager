@@ -1,13 +1,7 @@
 #!/bin/bash
+source config.cfg;
 
 actual=0
-
-#temperature
-level0=38 # power off
-level1=42 # 25% 
-level2=55 # 50%
-level3=60 # 75%
-level4=70 # 100%
 
 set0(){
     if [ "$actual" -ne 0 ]; then
@@ -55,7 +49,6 @@ read_temp() {
     #getGPUtemp=$(cat /sys/class/thermal/thermal_zone1/temp)
 
     cpu_temp=$((getCPUtemp / 1000))
-    #gpu_temp=$((getGPUtemp / 1000))
     
     echo $cpu_temp
     
