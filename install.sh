@@ -5,9 +5,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "Creating the directory .fan-manager..."
-mkdir /home/$SUDO_USER/.fan-manager
-
 echo "Copying the files to the correct locations..."
 # Copy the script file
 cp files/fan-manager.sh /usr/local/bin/fan-manager.sh
