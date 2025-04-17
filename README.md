@@ -1,6 +1,6 @@
 # linux-fan-manager
 
-This is a simple shell script to manage a PWM fan on Radxa Rock Pi 4SE with Linux
+This is a simple shell script to manage a PWM fan on Radxa Rock Pi 4SE with Linux. It is tested using the official Radxa Debian OS avilable here: https://docs.radxa.com/en/rock4/official-images
 
 ## Automatic install
 
