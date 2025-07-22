@@ -47,3 +47,9 @@ Finally you can add the service to the boot execution and start it.
 sudo systemctl enable fan-manager.service
 sudo systemctl start fan-manager.service
 ```
+
+## Hardware
+
+The PWM fan pin should be connected to pwm0, see [here](https://wiki.radxa.com/Rock4/hardware/gpio) the schematic.
+
+Note that you should enable the pwm0 (for example using the command _rsetup_)
